@@ -90,6 +90,10 @@ function Home() {
     setOpenEditBookModal(false);
   }
 
+  // funtion searchByAuthor() {
+
+  // }
+
   return (
     <DefaultPage>
       <h1 style={{color: "#fff"}}>A BIBLIOTECA ENCANTADA</h1>
