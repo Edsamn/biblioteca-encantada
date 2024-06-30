@@ -1,20 +1,19 @@
 import React from "react";
-import ButtonDefault from "./ButtonDefault";
+import ButtonDefault from "../button-components/ButtonDefault";
 import ModalStyled from "./ModalStyled";
 
 interface ModalProps {
   title: string;
   children: React.ReactNode;
   action: () => void;
-  actionConfirm: () => void;
+  actionConfirm?: () => void;
 }
 
-function Modal({title, children, action, actionConfirm}: ModalProps) {
+function Modal({title, children, action}: ModalProps) {
   return (
     <ModalStyled>
       <div
         style={{
-          height: "500px",
           width: "300px",
           backgroundColor: "#d7c3df",
           color: "#333",
@@ -30,8 +29,7 @@ function Modal({title, children, action, actionConfirm}: ModalProps) {
 
         <div>{children}</div>
         <div>
-          <ButtonDefault action={action} label="Cancelar" />
-          <ButtonDefault label="Confirmar" action={actionConfirm} />
+          <ButtonDefault action={action} label="Fechar" />
         </div>
       </div>
     </ModalStyled>
