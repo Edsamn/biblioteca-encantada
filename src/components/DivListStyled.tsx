@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const DivListStyled = styled.div`
-  height: 200px;
-  width: 250px;
+  height: 250px;
+  width: 300px;
   margin: 20px;
   color: #2b2929;
   background-color: #e0dbabfc;
@@ -12,7 +12,6 @@ const DivListStyled = styled.div`
   justify-content: space-evenly;
   flex-wrap: wrap;
   border: solid 2px #fff;
-  font-size: 1.1rem;
 `;
 
 export default DivListStyled;
